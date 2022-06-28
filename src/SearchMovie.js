@@ -13,14 +13,15 @@ function SearchMovie() {
   } ,[typing])
 
   async function getMovies(){
-    const response=await fetch('https://swapi.dev/api/films');
+    const response=await fetch('https://raw.githubusercontent.com/beyzauyanksoy/movie-app/main/src/data/films.json');
     const data=await response.json();
     const getData=data.results.filter(item=>item.title.toLowerCase().includes(typing.toLowerCase())).map(i=>{
       return {
         id: i.episode_id,
         title:i.title,
         img:i.img,
-        data:i.release_date
+        date:i.date,
+        point:i.point,
       }
     })
     setMovieData(getData);
@@ -47,59 +48,25 @@ function SearchMovie() {
             type="text"
             placeholder="Search..."
           ></input>
+          
          
         </div>
       </div>
       <div className="mainMovie">
         <div className="mainBoxs">
-          <MovieCard
-            image="https://iasbh.tmgrup.com.tr/4529f5/752/395/7/0/1280/668?u=https://isbh.tmgrup.com.tr/sbh/2021/06/12/harry-potter-ve-felsefe-tasi-filmi-konusu-ve-oyunculari-harry-potter-ve-felsefe-tasi-filmi-konusu-nedir-oyunculari-kimler-1623506373237.jpg"
-            name="Harry Potter Felsefe Taşı"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
-           <MovieCard
-            image="https://www.log.com.tr/wp-content/uploads/2019/08/netflix-yuzuklerin-efendisi.jpg"
-            name="Yüzüklerin Efendisi"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
-           <MovieCard
-            image="https://fisoloji.com/wp-content/uploads/2020/02/a-quiet-place-part-2.jpg"
-            name="Sessiz Bir Yer"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
-           <MovieCard
-            image="https://i4.hurimg.com/i/hurriyet/75/750x422/58d19b1a2269a23d8cda6ec0.jpg"
-            name="Güzel ve Çirkin"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
+       {
+        movieData.map(item=>{
+          return (
             <MovieCard
-            image="https://image.tmdb.org/t/p/original/tQDp8j2sxcvDGEKBPW2VZeTqAo9.jpg"
-            name="Karmakarışık"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
+            image={item.img}
+            name={item.title}
+            date={item.date}
+            point={item.point}
           ></MovieCard>
-           <MovieCard
-            image="https://i01.sozcucdn.com/wp-content/uploads/2020/05/11/iecrop/yarin1_16_9_1589204704.jpg"
-            name="Yarının Sınırında"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
-           <MovieCard
-            image="https://www.profesorungunlugu.com/wp-content/uploads/2021/09/Gercek-Kahraman-Film-incelemesi-Free-Guy.jpg"
-            name="Gerçek Kahraman"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
-             <MovieCard
-            image="https://i4.hurimg.com/i/hurriyet/75/750x422/5b5884c20490c813b8b41a9e.jpg"
-            name="Karayip Korsanları"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
+          )
+        })
+       }
+           
           
         </div>
       </div>

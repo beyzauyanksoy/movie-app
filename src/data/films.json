@@ -1,46 +1,61 @@
 {
   "results": [
     {
-      "title": "Aa New Hope",
+      "title": "Karayip Korsanları Salazar'ın İntikamı",
       "episode_id": 4,
-      "img": "https://kbimages1-a.akamaihd.net/Images/194c814f-7c93-499e-adde-6447e4d6fe39/255/400/False/image.jpg",
-      "date": "14.07.2008",
-      "point": "7.8/10"
+      "img": "https://upload.wikimedia.org/wikipedia/tr/e/ea/Karayip_Korsanlar%C4%B1_Salazar%E2%80%99%C4%B1n_%C4%B0ntikam%C4%B1_T%C3%BCrk%C3%A7e_Afi%C5%9F.jpg",
+      "date": "26.05.2017",
+      "point": "6.5 / 10"
     },
     {
-      "title": "The Empire Strikes Back",
+      "title": "Karayip Korsanları Gizemli Denizlerde",
       "episode_id": 5,
-      "img": "https://m.media-amazon.com/images/I/51rHfst51TL._AC_SY1000_.jpg",
-      "date": "14.07.2008",
-      "point": "7.8/10"
+      "img": "https://tr.web.img4.acsta.net/medias/nmedia/18/84/05/33/19771364.jpg",
+      "date": "07.05.2011",
+      "point": "6.6 / 10"
     },
     {
-      "title": "Return of the Jedi",
+      "title": "Karayip Korsanları Dünya'nın Sonu",
       "episode_id": 6,
-      "img": "https://m.media-amazon.com/images/I/51xQHKh6wwL._AC_SY1000_.jpg",
-      "date": "14.07.2008",
-      "point": "7.8/10"
+      "img": "https://tr.web.img4.acsta.net/pictures/bzp/01/57139.jpg",
+      "date": "25.07.2007",
+      "point": "4.5 / 5"
     },
     {
-      "title": "The Phantom Menace",
+      "title": "Karayip Korsanları Ölü Adamın Sandığı",
       "episode_id": 1,
-      "img": "https://img-pttavm.mncdn.com/pimages/592/091/514/620b5ff7564bf.jpg?v=201910111528",
-      "date": "14.07.2008",
-      "point": "7.8/10"
+      "img": "https://tr.web.img4.acsta.net/pictures/bzp/01/57138.jpg",
+      "date": "14.07.2006",
+      "point": "7.3 / 10"
     },
     {
-      "title": "Attack of the Clones",
+      "title": "Karayip Korsanları Siyah İnci'nin Lanet",
       "episode_id": 2,
-      "img": "https://m.media-amazon.com/images/I/512K7WkyZKL._AC_SY1000_.jpg",
-      "date": "14.07.2008",
-      "point": "7.8/10"
+      "img": "https://tr.web.img3.acsta.net/pictures/bzp/01/46117.jpg",
+      "date": "29.10.1003",
+      "point": "8.1 / 10"
     },
     {
-      "title": "Revenge of the Sith",
+      "title": "Yüzüklerin Efendisi Kralın Dönüşü",
       "episode_id": 3,
-      "img": "https://kbimages1-a.akamaihd.net/50a779f5-b8a1-4deb-b0ab-254083eb2df1/353/569/90/False/revenge-of-the-sith-star-wars-episode-iii.jpg",
-      "date": "14.07.2008",
-      "point": "7.8/10"
-    }
+      "img": "https://tr.web.img4.acsta.net/pictures/bzp/01/39187.jpg",
+      "date": "19.12.2003",
+      "point": "9.0 / 10"
+    },
+    {
+        "title": "Yüzüklerin Efendisi İki Kule",
+        "episode_id": 7,
+        "img": "https://upload.wikimedia.org/wikipedia/tr/4/40/Y%C3%BCz%C3%BCklerinEfendisi%27%C4%B0kiKule-film.jpg",
+        "date": "20.12.2002",
+        "point": "8.8 / 10"
+      },
+      {
+        "title": "Yüzüklerin Efendisi Yüzük Kardeşliği",
+        "episode_id": 8,
+        "img": "https://tr.web.img4.acsta.net/pictures/bzp/01/27070.jpg",
+        "date": "20.12.2002",
+        "point": "8.8 / 10"
+      }
+    
   ]
 }
