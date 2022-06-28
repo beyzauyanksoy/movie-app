@@ -21,7 +21,7 @@ code {
   justify-content: center;
   align-items: center;
 }
-.searchBar .mainSearchBar{
+.searchBar .mainSearchBar h2{
   font-family: 'Rubik Mono One', sans-serif;
   font-size: 18px;
 }

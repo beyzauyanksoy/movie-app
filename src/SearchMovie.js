@@ -5,8 +5,36 @@ import { useState, useEffect } from "react";
 
 function SearchMovie() {
   const [typing, setTyping] = useState("");
+  const [movieData,setMovieData]=useState([]);
+
+  useEffect(()=>{
+    getMovies();
+    console.log(movieData);
+  } ,[typing])
+
+  async function getMovies(){
+    const response=await fetch('https://swapi.dev/api/films');
+    const data=await response.json();
+    const getData=data.results.filter(item=>item.title.toLowerCase().includes(typing.toLowerCase())).map(i=>{
+      return {
+        id: i.episode_id,
+        title:i.title,
+        img:i.img,
+        data:i.release_date
+      }
+    })
+    setMovieData(getData);
+  }
+
+
   function typingstart(e) {
-    setTyping(e.target.value);
+    const typingTimeout=setTimeout(()=>{
+      setTyping(e.target.value);
+    },500)
+    return()=>{
+      clearTimeout(typingTimeout);
+    }
+    
   }
 
   return (
@@ -19,8 +47,7 @@ function SearchMovie() {
             type="text"
             placeholder="Search..."
           ></input>
-          <br></br>
-          {typing}
+         
         </div>
       </div>
       <div className="mainMovie">
@@ -73,12 +100,7 @@ function SearchMovie() {
             date="4 Kasım 2001"
             point="4.4 / 5"
           ></MovieCard>
-            <MovieCard
-            image="https://i4.hurimg.com/i/hurriyet/75/750x422/5b5884c20490c813b8b41a9e.jpg"
-            name="Karayip Korsanları"
-            date="4 Kasım 2001"
-            point="4.4 / 5"
-          ></MovieCard>
+          
         </div>
       </div>
     </div>
